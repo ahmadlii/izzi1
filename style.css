@@ -1,0 +1,229 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, header ul, .sign, .dollar, .purple, main, .purple-footer, .footer2, .footer-lists, .terms-list, .footer-bottom, .footer-icons {
+    display: flex;
+    align-items: center;
+}
+header {
+    justify-content: space-between;
+    padding: 20px 130px 20px 30px;
+}
+.sign {
+    gap: 25px;
+}
+ul {
+    list-style: none;
+}
+header ul {
+    gap: 20px;
+}
+.headings {
+    padding: 10px;
+    color: #342D71;
+}
+button {
+    background-color: #5920BC;
+    color: #fff;
+    padding: 15px 25px;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    line-height: 16.8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.purple {
+    background-color: #F5F3FF;
+    height: 170px;
+    padding: 0 130px;
+}
+.purple-text {
+    font-size: 30px;
+    color: #222;
+}
+main {
+    justify-content: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 406px);
+    gap: 20px;
+    position: relative;
+    top: -35px;
+}
+.card {
+    width: 406px;
+    position: relative;
+}
+.image-container {
+    display: inline-block;
+    width: 406px;
+}
+.image-container img {
+    width: 100%;
+    height: 296px;
+}
+.babysitter {
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 30px;
+    top: 180px;
+}
+.babysitter h2 {
+    font-size: 20px;
+}
+.dollar {
+    gap: 5px;
+}
+.dollar span {
+    color: #222;
+}
+.new-list li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #222;
+    font-family: "Montserrat", sans-serif;
+}
+.purple-footer {
+    height: 250px;
+    background-color: #F5F3FF;
+    justify-content: space-around;
+}
+.info-footer {
+    margin: 15px 0;
+    color: #222;
+}
+.info-footer>img {
+    margin-right: 15px;
+}
+.f-card {
+    padding: 40px;
+    width: 390px;
+    background-color: #FCFBFE;
+    border-radius: 6px;
+}
+.footer-lists {
+    width: 770px;
+    justify-content: space-between;
+}
+.footer-lists ul li {
+    margin: 20px 0;
+    color: #222;
+}
+.bold {
+    font-weight: 600;
+}
+.terms-list {
+    gap: 30px;
+}
+.footer-icons {
+    gap: 40px;
+}
+.footer-bottom {
+    padding: 30px 0;
+    justify-content: space-between;
+    width: 1100px;
+}
+.footer2, .footer-bottom {
+    width: 1258px;
+    margin: 30px auto;
+}
+.menuicon {
+    display: none;
+    margin: 10px 0;
+}
+.menu-list li{
+    background-color: #faf8fd;
+    margin: 5px 0;
+}
+@media screen and (max-width: 800px) and (min-width : 300px){
+    .footer-cont{
+        margin: 0 30px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width : 300px){
+    .new-list{
+        display: none;
+    }
+}
+@media screen and (max-width: 1300px) {
+    header ul, header .icon, header .sign {
+        display: none;
+    }
+    .menuicon {
+        display: block;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 406px);
+    }
+    .footer-lists {
+        flex-direction: row;
+    }
+    .footer2, .footer-bottom {
+        width: 1110px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer2, .footer-bottom {
+        width: 90%;
+    }
+    .footer-lists {
+        flex-direction: row;
+        width: 500px;
+    }
+    .footer2{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 910px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .footer2, .footer-bottom {
+        width: 300px;
+        margin: 30px auto;
+        flex-direction: column;
+    }
+    .purple-footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .terms-list{
+        margin: 20px 0;
+    }
+    .footer-lists{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 440px) {
+    .cards, .image-container {
+        width: 300px;
+    }
+    .footer2, .footer-bottom {
+        width: 200px;
+        margin: 30px auto;
+    }
+    .terms-list {
+        margin: 40px 0;
+    }
+    .footer-lists {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        width: 300px;
+    }
+}
